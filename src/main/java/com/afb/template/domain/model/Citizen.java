@@ -1,6 +1,7 @@
 package com.afb.template.domain.model;
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,6 +15,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@SuperBuilder
 @Table(name = "citizen")
 @PrimaryKeyJoinColumn(referencedColumnName = "id")
 public class Citizen extends Users{
