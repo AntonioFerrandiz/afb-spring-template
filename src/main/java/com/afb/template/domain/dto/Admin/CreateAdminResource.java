@@ -1,5 +1,6 @@
 package com.afb.template.domain.dto.Admin;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,6 +8,7 @@ import java.util.Date;
 
 @Getter
 @Setter
+@Builder
 public class CreateAdminResource {
     private String alias;
     private String firstname;
